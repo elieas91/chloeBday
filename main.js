@@ -30,20 +30,15 @@ function toggleForm() {
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get form values
     var name = document.getElementById('name').value;
     var kids = document.getElementById('kids').value;
     var adults = document.getElementById('adults').value;
 
-    // Pre-written message
-    var message = `I am confirming my attendance to Chloe's birthday, We will be joining as ${adults} adults and ${kids} kids, for location please click this link: \n\n https://maps.app.goo.gl/zAaGd3c4F7E1mgtHA`;
+    var message = `I am confirming my attendance to Chloe's birthday, We will be joining as ${adults} adults and ${kids} kids, for location please click this link: \n https://maps.app.goo.gl/zAaGd3c4F7E1mgtHA`;
 
-    // WhatsApp number (replace with the desired number)
     var phoneNumber = '71758193';
 
-    // WhatsApp URL
     var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Open WhatsApp URL
     window.open(whatsappURL, '_blank');
 });
