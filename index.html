@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe Bday Invite</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body style="width: 100vw; overflow-x: hidden">
+        <div style="width: 100vw">
+            <video id="myVideo" controls>
+                <source src="all2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <form id="myForm" method="POST" action="" style="padding: 1rem; display: none">
+                <h1 style="text-align: center; margin-bottom: 1rem">Join us for Chloe's Birthday!</h1>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="phone" name="phoneNumber" placeholder="Phone Number" required>
+                <select id="kids" name="kids" required style="width: 91vw">
+                    <option value="" disabled selected>Select number of kids attending</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <select id="adults" name="adults" required style="width: 91vw">
+                    <option value="" disabled selected>Select number of adults attending</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button style="width: 100%" type="submit">Submit</button>
+                <div style="margin-top: 1rem">
+                    <h4 style="text-align: center"><a href="https://maps.app.goo.gl/zAaGd3c4F7E1mgtHA">Click here for the location</a></h4>
+                </div>
+            </form>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 0.5rem">
+                <button style="width: 45%" onclick="openFullscreen()">Fullscreen</button>
+                <button id="toggleButton" style="width: 45%" onclick="toggleForm()">Next</button>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
