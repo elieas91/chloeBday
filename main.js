@@ -36,7 +36,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     var adults = document.getElementById('adults').value;
 
     // Pre-written message
-    var message = `I am confirming my attendance to Chloe's birthday, We will be joining as ${adults} adults and ${kids} kids`;
+    var message = `I am confirming my attendance to Chloe's birthday, We will be joining as ${adults} adults and ${kids} kids, for location please click this link: <br/> https://maps.app.goo.gl/zAaGd3c4F7E1mgtHA`;
 
     // WhatsApp number (replace with the desired number)
     var phoneNumber = '71758193';
